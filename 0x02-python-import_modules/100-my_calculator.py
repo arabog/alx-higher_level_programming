@@ -8,7 +8,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     op = sys.argv[2]
-    if op != '+' and op != '_' and op != '*' and op != '/':
+    if op != '+' and op != '-' and op != '*' and op != '/':
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     b = int(sys.argv[3])
 
     if op == '+':
-         print("{} + {} = {}".format(a, b, add(a, b)))
+        print("{} + {} = {}".format(a, b, add(a, b)))
     elif op == '-':
         print("{} - {} = {}".format(a, b, sub(a, b)))
     elif op == '*':
